@@ -131,17 +131,23 @@
             color: white;
             border: none;
             padding: 8px 16px; /* Más pequeño: padding reducido */
-            width: 100%;
+            width: 80%; /* Menos largo: 80% en lugar de 100% */
+            margin: 15px auto 0 auto; /* Centrado y margen superior */
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 15px;
             font-size: 14px; /* Fuente más pequeña */
             text-decoration: none;
-            display: inline-block;
+            display: block; /* Cambiado a block para centrar bien */
             text-align: center;
         }
         .whatsapp-btn:hover {
             background-color: #128C7E;
+        }
+        .whatsapp-icon {
+            vertical-align: middle;
+            margin-right: 8px;
+            height: 20px; /* Tamaño pequeño para el ícono */
+            width: auto;
         }
         footer {
             background-color: rgba(35, 47, 62, 0.8); /* Overlay para footer */
@@ -242,7 +248,9 @@
             <h2 id="modalTitle"></h2>
             <div id="modalPrice" class="price"></div>
             <p id="modalDesc"></p>
-            <a href="https://wa.me/573172792295?text=Hola%20quisiera%20comprar%20un%20galón%20de%20desengrasante%20por%20favor" target="_blank" class="whatsapp-btn">Contactar por WhatsApp</a>
+            <a href="https://wa.me/573172792295?text=Hola%20quisiera%20comprar%20un%20galón%20de%20desengrasante%20por%20favor" target="_blank" class="whatsapp-btn">
+                <img src="https://img.icons8.com/color/24/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">Contactar por WhatsApp
+            </a>
         </div>
     </div>
 
